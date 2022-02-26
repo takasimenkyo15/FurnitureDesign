@@ -1,0 +1,112 @@
+/* タブレットデザイン */
+@media screen and (max-width: 960px) {
+  #top li {
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  #top p {
+    padding-left: 20%;
+  }
+
+  #views p {
+    padding: 0;
+    text-align: center;
+    font-size: 13px;
+  }
+
+.abouts {
+  width: 80%;
+}
+
+/* company css */
+.main {
+  width: 90%;
+}
+
+.map {
+  width: 100%;
+}
+
+.item {
+  width: 100%;
+}
+
+.prodacts {
+  display: block;
+  padding-left: 0px;
+}
+
+.prodact-item {
+  width: 100%;
+  margin-right: 0%;
+}
+
+.prodact-text {
+  margin-top: 50px;
+}
+
+#back-top {
+  margin: 50px 0 100px 0;
+}
+
+}
+
+
+
+/* スマホ向けデザイン */
+@media screen and (max-width: 520px) {
+  #top {
+    padding-bottom: 70px;
+  }
+
+
+  #top li {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  #top p {
+    padding-left: 20%;
+  }
+
+  #views p {
+    padding: 0;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .namber ul {
+    width: 100%;
+    
+  }
+
+  .namuber ul li {
+    padding: 0;
+  }
+
+  footer {
+    display: block;
+  }
+
+  footer p {
+    margin-top: 15px;
+  }
+
+  .abouts {
+    width: 100%;
+  }
+
+  .main {
+    padding: 100px 0 50px 0;
+  }
+
+  .map {
+    width: 100%;
+  }
+/* 
+  header {
+    padding: 10px;
+  } */
+
+}
