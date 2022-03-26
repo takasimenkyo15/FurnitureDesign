@@ -12,10 +12,10 @@ $(function() {
       $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
   });
  
-$('#views').click(function() {
-  $('#view').css('display','block');
-  $('#views').css('display','none')
-});
+// $('#views').click(function() {
+//   $('#view').css('display','block');
+//   $('#views').css('display','none')
+// });
 
 
 

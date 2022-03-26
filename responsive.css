@@ -1,22 +1,25 @@
 /* タブレットデザイン */
 @media screen and (max-width: 960px) {
+  #top {
+    padding-bottom: 98px;
+  }
+  
   #top li {
-    width: 50%;
-    margin: 10px auto;
-  }
-
-  #top p {
-    padding-left: 20%;
-  }
-
-  #views p {
-    padding: 0;
-    text-align: center;
-    font-size: 13px;
+    width: 47%;
   }
 
 .abouts {
-  width: 80%;
+  padding-bottom: 95px;
+  /* width: 100%; */
+}
+
+footer {
+  display: block;
+  padding: 0 50px 25px 40px;
+}
+
+footer p {
+  left: 0;
 }
 
 /* company css */
@@ -24,12 +27,28 @@
   width: 90%;
 }
 
-.map {
-  width: 100%;
+dt {
+  float: none;
 }
 
+.border dt {
+  padding-bottom: 10px;
+}
+
+.border-a dt {
+  height: 30px;
+}
+
+
+.map {
+  width: 100%;
+  padding-bottom: 55px;
+}
+
+/* item css */
 .item {
   width: 100%;
+  /* padding-right: 40px; */
 }
 
 .prodacts {
@@ -42,39 +61,52 @@
   margin-right: 0%;
 }
 
+.prodact-item img {
+  width: 100%;
+}
+
 .prodact-text {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #back-top {
   margin: 50px 0 100px 0;
 }
 
+/* about css */
+
+
 }
 
+@media screen and (max-width: 800px) {
+  .item {
+    padding-right: 40px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .abouts {
+    width: 100%;
+  }
+
+  .main {
+    max-width: none;
+    width: 93%;
+  }
+
+  .border {
+    min-width: auto;
+  }
+
+  .map {
+    min-width: auto;
+  }
+}
 
 
 /* スマホ向けデザイン */
 @media screen and (max-width: 520px) {
-  #top {
-    padding-bottom: 70px;
-  }
-
-
-  #top li {
-    width: 100%;
-    margin: 10px auto;
-  }
-
-  #top p {
-    padding-left: 20%;
-  }
-
-  #views p {
-    padding: 0;
-    text-align: center;
-    font-size: 13px;
-  }
 
   .namber ul {
     width: 100%;
@@ -85,28 +117,20 @@
     padding: 0;
   }
 
-  footer {
-    display: block;
-  }
-
-  footer p {
-    margin-top: 15px;
-  }
-
   .abouts {
     width: 100%;
   }
 
-  .main {
-    padding: 100px 0 50px 0;
-  }
+.main {
+  width: 92%;
+}
+
 
   .map {
     width: 100%;
   }
-/* 
-  header {
-    padding: 10px;
-  } */
+
+
+
 
 }

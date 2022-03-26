@@ -6,7 +6,7 @@
 
 header {
   display: flex;
-  padding: 30px 50px 30px 80px;
+  padding: 25px 50px 25px 40px;
   justify-content: space-between;
   /* position: fixed; */
   /* height: 50px; */
@@ -16,8 +16,18 @@ header {
   background-color: white;
 }
 
+header a {
+ text-decoration: none; 
+ color: black;
+}
+
+header a:hover {
+  opacity: .6;
+  transition: 0.7s;
+}
+
 header h1 {
-  font-size: 17px; 
+  font-size: 19.5px; 
 }
 
 .header-click {
@@ -88,12 +98,12 @@ font-weight: bold;
 /*========= ボタンのためのCSS ===============*/
 .openbtn{
 position:fixed;
-  z-index: 9999;/*ボタンを最前面に*/
-top:30px;
-right: 70px;
+z-index: 9999;/*ボタンを最前面に*/
+top:20px;
+right: 30px;
 cursor: pointer;
-  width: 50px;
-  height:50px;
+width: 50px;
+height:50px;
 }
 
 /*×に変化*/	
@@ -146,7 +156,7 @@ opacity: 0;
 
 #top {
   width: 100%;
-  padding: 100px 40px 160px 40px;
+  padding: 50px 40px 120px 40px;
 }
 
 
@@ -154,19 +164,22 @@ opacity: 0;
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
 }
 
 #top li {
-  width: 25%;
+  width: 23%;
   list-style: none;
-  margin: 10px auto;
+  margin-top: 30px;
+  /* margin: 10px auto; */
   text-align: center;
 }
 
 #top img {
-  max-width: 100%;
+  width: 100%;
+  /* height: 79%; */
+  object-fit: cover;
 }
+
 
 #top a {
  text-decoration: none;
@@ -176,28 +189,22 @@ opacity: 0;
 
 #top p {
   text-align: left;
- padding-left: 10%;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
-#views  {
+#more {
   width: 100%;
-  font-size: 20px;
+  text-align:center;
+  padding-top: 35px;
 }
 
-#views p {
-  cursor: pointer;
-  padding: 20px 0 0 0;
-  text-align: center;
-  font-size: 13px;
+#more > a {
+  font-size: 14px;
 }
 
-#view {
-  display: none;
-}
-
-#view {
-  width: 100%;
-  /* padding: 100px 40px 160px 40px; */
+#more > a:hover {
+color:rgba(0, 0, 0, 0.651)
 }
 
 main #top ul #view ul {
@@ -207,43 +214,22 @@ main #top ul #view ul {
   
 }
 
-#view li {
-  width: 25%;
-  list-style: none;
-  margin: 10px auto;
-  text-align: center;
-}
-
-#view img {
-  max-width: 100%;
-}
-
-#view a {
- text-decoration: none;
- color: black;
- font-size: 12px;
-}
-
-#view p {
-  text-align: left;
- padding-left: 10%;
-}
-
-.namuber {
+#namuber {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.namuber ul li {
-  padding: 20px;
+#namuber ul li {
+  padding: 0 17px 0 17px;
+  margin-top: 25px;
 }
 
 footer {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 0 60px 50px 60px;
+  padding: 0 50px 18px 40px;
 }
 
 footer ul {
@@ -257,46 +243,62 @@ footer  li {
 footer a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.692);
-  margin-right: 15px;
-  font-size: 13px;
+  margin-right: 30px;
+  font-size: 12px;
 }
 
 footer p {
   font-size: 10px;
+  position: relative;
+  top: 5px;
+  left: 5px;
 }
+
+
+/* Products css */
+#top h2 {
+ font-size: 14px;
+ font-weight: 400;
+ padding-top: 70px;
+ padding-bottom: 0;
+}
+
 
 
 /* about css */
 .abouts {
-  width: 50%;
-  padding: 100px 40px 160px 40px;
+  width: 680px;
+  padding: 100px 40px 120px 40px;
 }
 
 .abouts h1 {
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 400;
-  margin: 40px;
+  letter-spacing: 0.5px;
 }
 
 .abouts p {
-  font-size: 13px;
-  margin: 40px;
-  line-height: 25px;;
+  font-size: 14px;
+  line-height: 26.5px;
+  letter-spacing: 0.1px;
+  padding-bottom: 30px;
 }
 
 
 /* company css */
 .main {
-  width: 50%;
-  padding: 100px 40px 50px 40px;
+  /* width: 50%; */
+  max-width: 600px;
+  padding: 100px 0px 40px 40px;
 }
 
 main h1 {
-  font-size: 15px;
-  margin-top:10px;
-  margin-bottom: 50px;
+  font-size: 14px;
+  padding-top:20px;
+  padding-bottom: 30px;
+  /* margin-bottom: 50px; */
   font-weight: 400;
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 
 dt {
@@ -309,78 +311,97 @@ dt::after {
 }
 
 .border {
-  width: 100%;
+  min-width: 600px;
   border-bottom: solid;
   border-color:rgba(0, 0, 0, 0.288);
   border-width: 1px;
-  margin: 20px 20px 20px 40px;
-  padding: 10px 10px 20px 0;
+  margin: 10px 0 10px 0;
+  padding: 10px 0 20px 10px;
   font-size: 14px;
   color:rgba(0, 0, 0, 0.822);
 }
 
 .border dt {
-  width: 30%;
+  width: 180px;
 }
 
 .border-a {
   font-size: 14px;
   width: 100%;
-  margin: 20px 20px 20px 40px;
-  padding: 10px 10px 20px 0;
+  margin: 10px 20px 0 0;
+  padding: 10px 10px 0 10px;
   color:rgba(0, 0, 0, 0.822);
 }
 
 .border-a dt {
-  width: 30%;
-  height: 100px;
+  width: 180px;
+  height: 60px;
 }
 
 .map {
-  padding: 0 40px 20px 40px;
+  /* padding: 0 20px 118px 40px; */
+  padding: 40px 0 78px 0;
   filter: grayscale();
-  width: 50%;
+  
+  /* width: 100%; */
+  min-width: 600px;
+}
+
+.map iframe {
+  height: 300px;
+  /* width: 100%;
+  min-width: 600px; */
 }
 
 /* item css */
 .item {
-  width: 65%;
-  padding: 100px 40px 0 40px;
+  max-width: 840px;
+  padding: 100px 0 0 40px;
 }
 
 .prodacts {
-  top: -20px;
   display: flex;
-  padding-left: 30px;
-  font-size: 14px;
+  font-size: 13.5px;
   color:rgba(0, 0, 0, 0.822)
 }
 
 .prodact-item {
-  width: 2200px;
+  /* width: 2200px; */
   margin-right: 8%;
+  /* width: 50%; */
 }
 
 .prodact-item img {
-  width: 100%;
+  width: 400px;
+  /* height: 100%; */
+  object-fit: cover;
 }
 
 .prodact-text p {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
 }
 
 .prodact-text dt {
-  width: 25%;
+  width: 30%;
+  letter-spacing: 0.5px;
+}
+
+.prodact-text  dd {
+  font-size: 14px;
 }
 
 #back-top {
   width: 100%;
   text-align: center;
-  margin: 50px 0 100px 20%;
+  /* margin: 56px 0 120px 27.5%; */
+  margin: 56px 0 120px 0;
 }
 
 #back-top a {
+  display: inline-block;
+  text-align: center;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.815);
-  font-size: 15px; 
+  font-size: 14px; 
 }
