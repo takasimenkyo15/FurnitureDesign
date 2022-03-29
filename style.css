@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 1360px;
 }
 
 header {
@@ -38,23 +39,27 @@ header h1 {
 
 #g-nav{
   /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
-  position:fixed;
-  z-index: 999;
-  /*ナビのスタート位置と形状*/
+position:fixed;
+z-index: 999;
+/*ナビのスタート位置と形状*/
 top:0;
-  left: -120%;
+left: -120%;
 width:100%;
-  height: 100vh;/*ナビの高さ*/
-/* background:#999; */
-background: rgba(5, 0, 0, 0.76);
-
+height: 100vh;/*ナビの高さ*/
+background: rgba(0, 0, 0, 0.8);
   /*動き*/
-transition: all 0.6s;
+/* transition: all 0.3s; */
+transition: background 0s;
+/* transition: left .3s; */
 }
+
 
 /*アクティブクラスがついたら位置を0に*/
 #g-nav.panelactive{
   left: 0;
+}
+#g-nav.panelactive ul{
+  left: 91px;
 }
 
 /*ナビゲーションの縦スクロール*/
@@ -73,26 +78,32 @@ transition: all 0.6s;
   /*ナビゲーション天地中央揃え*/
   position: absolute;
   z-index: 999;
-  top:15%;
-  left:10%;
+  top:101px;
+  /* left:91px; */
+  left:-120%;
   transform: translate(-50%,-50%);
+  /* margin-top: 30px; */
+
+
+  transition: all .3s;
 }
 
 /*リストのレイアウト設定*/
 
 #g-nav li{
 list-style: none;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #g-nav li a{
 color: white;
 text-decoration: none;
-padding:10px;
+padding:6.5px;
 display: block;
 text-transform: uppercase;
-letter-spacing: 0.1em;
-font-weight: bold;
+/* letter-spacing: 0.1em; */
+font-size: 14px;
+/* font-weight: bold; */
 }
 
 /*========= ボタンのためのCSS ===============*/
@@ -111,11 +122,11 @@ height:50px;
   display: inline-block;
   transition: all .4s;
   position: absolute;
-  left: 14px;
-  height: 3px;
+  left: 10px;
+  height: 2px;
   border-radius: 2px;
-background-color: black;
-  width: 45%;
+  background-color: black;
+  width: 60%;
 }
 
 .openbtn span:nth-of-type(1) {
@@ -131,13 +142,14 @@ top:31px;
 }
 
 .openbtn.active span:nth-of-type(1) {
-  top: 18px;
-  left: 18px;
+  top: 13px;
+  left: 10px;
   transform: translateY(6px) rotate(-45deg);
-  width: 30%;
+  width: 60%;
+  background-color: white;
 }
 
-.openbtn.active span:nth-of-type(2) {
+/* .openbtn.active span:nth-of-type(2) {
 opacity: 0;
 }
 
@@ -146,7 +158,18 @@ opacity: 0;
   left: 18px;
   transform: translateY(-6px) rotate(45deg);
   width: 30%;
-}
+} */
+
+.openbtn.active span:nth-of-type(2) {
+  /* opacity: 0; */
+  top: 25px;
+  left: 10px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 60%;
+  background-color: white;
+  }
+  
+  
 
 
 /* main {
@@ -172,6 +195,11 @@ opacity: 0;
   margin-top: 30px;
   /* margin: 10px auto; */
   text-align: center;
+  transition: opacity .8s;
+}
+
+#top li:hover {
+  opacity: 0.6;
 }
 
 #top img {
@@ -238,6 +266,11 @@ footer ul {
 
 footer  li {
   list-style: none;
+  transition: opacity .8s;
+}
+
+footer li:hover {
+  opacity: 0.6;
 }
 
 footer a {
